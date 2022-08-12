@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Antic+Slab&family=Bahiana&family=Forum&family=Fredoka:wght@500&family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@300&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --font-bahiana: 'Bahiana', cursive;
+  --font-forum: 'Forum', cursive;
+  --font-antic: 'Antic Slab', serif;
+  --font-kanit: 'Kanit', sans-serif;
+  --white: #ffffff;
+  --yellow: #ffbc02;
+  --orange: #f87a26;
+  --red: rgb(255, 0, 0);
+  --red-hypno: #e62039;
+--red-hypno-hover: #c02537;
+  --blue: #3959a7;
+  --black: #000;
+  --primary: #58c3cf;
+  --primary-text: #1a1a1a;
+  --pink: #ff97e1;
+  --secondary-text: #ffffff;
+  --accent: #505050;
+  --gray: #312f32;
+  --light: #e6e6e6;
+  --accent-text: #ffffff;
+}
+
+.body{
+  font-size:22px;
+  font-family: var(--font-kanit);
+
+}
+.main_bg {
+  background: rgb(15, 15, 15);
+  background: linear-gradient(
+    95deg,
+    rgb(12, 11, 11) 0%,
+    rgb(0, 0, 0) 50%
+  );
+}
+
+.btn_primary:hover {
+  background:  #b90000;
+  background: linear-gradient(
+    193deg,
+    #ff0000 15%,
+    rgb(63, 15, 15) 89%
+  );
+  color: #fff;
+}
+.btn_primary{
+  background:  #b90000;
+  background: linear-gradient(
+    193deg,
+    #ffe600 15%,
+    rgb(255, 145, 0) 89%
+  );
+  color: #000;
+  font-size:32px;
+  font-family: var(--font-bahiana)
+}
+
+.btn_primary_outline {
+  background: transparent;
+  border: 3px solid
+    linear-gradient(
+      193deg,
+      rgb(185, 0, 0) 15%,
+      rgb(63, 15, 15) 89%
+    );
+}
+
+.float {
+  animation: float 6s ease-in-out infinite;
+}
+
+@keyframes float {
+	0% {
+
+		transform: translatey(0px);
+	}
+	50% {
+		transform: translatey(-20px);
+	}
+	100% {
+
+		transform: translatey(0px);
+	}
+}
