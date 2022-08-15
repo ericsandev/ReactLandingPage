@@ -54,10 +54,10 @@
   background:  #b90000;
   background: linear-gradient(
     193deg,
-    #ffe600 15%,
-    rgb(255, 145, 0) 89%
+    #b90000 15%,
+    rgb(54, 22, 22) 89%
   );
-  color: #000;
+  color: rgb(255, 255, 255);
   font-size:32px;
   font-family: var(--font-bahiana)
 }

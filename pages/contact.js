@@ -16,13 +16,12 @@ const Contact = () => {
   return (
     <div className='h-full main_bg text-white overflow-hidden' id='top'>
       <Helmet>
-        <title>Hypnofrens | Contact Hypnfrens NFT</title>
+        <title>Hypnofrens | Contact Hypnofrens NFT</title>
         <meta name='description' content='Contact Hypnofrens' />
       </Helmet>
       <Navbar />
       <ContactForm />
       <FAQ />
-
       <Footer />
     </div>
   );

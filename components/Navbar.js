@@ -19,7 +19,6 @@ const Navbar = () => {
           return;
         }
       }
-      closeMenu();
     };
     document.addEventListener('mousedown', handleClick);
     return () => {
@@ -60,7 +59,7 @@ const Navbar = () => {
           <Fade
             duration={300}
             delay={100}
-            className='rounded-b-3xl absolute py-20 top-0 flex justify-center items-center  left-0 right-0 bg-[#000000E6] z-20'
+            className='rounded-b-3xl h-[100vh] absolute py-20 top-0 flex justify-center items-center  left-0 right-0 bg-[#000000E6] z-20'
           >
             <div ref={refMenu}>
               <ContentSidebar toggleMenu={toggleMenu} />
@@ -81,7 +80,7 @@ const ContentSidebar = ({ toggleMenu }) => {
           onClick={toggleMenu}
           className='mb-3 sm:mb-0 mt-4 sm:mt-0 ml-0 sm:ml-7'
         >
-          Collections
+          Collection
         </a>
       </Link>
       <Link href='/#team'>
@@ -97,14 +96,14 @@ const ContentSidebar = ({ toggleMenu }) => {
           FAQ
         </a>
       </Link>
-      {/* <Link href='/contact'>
+      <Link href='/contact'>
         <a
           onClick={toggleMenu}
-          className='mb-3 sm:mb-0 ml-0 sm:ml-7 mr-0 sm:mr-7'
+          className='mb-3 rounded-xl btn_primary px-2 sm:mb-0 ml-0 sm:ml-7 mr-0 sm:mr-7'
         >
-          Contact
+          HELLIST
         </a>
-      </Link> */}
+      </Link>
     </div>
   );
 };
