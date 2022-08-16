@@ -8,13 +8,13 @@ import {
 import emailjs from '@emailjs/browser';
 
 
-const ContactForm = () => {
+const HellistForm = () => {
   const { register, handleSubmit, formState: { errors } } = useForm();
 
   const sendEmail = (e) => {
     emailjs.sendForm(
       'service_l5ngo74',
-      'template_1pz7nnh',
+      'template_lkmw4rk',
       'form',
       'vEWfOVnvJVo_BpYjo')
       .then(res => console.log(res))
@@ -30,7 +30,7 @@ const ContactForm = () => {
           </label>
           <input placeholder="Your name" {...register('name', { required: true, minLength: 3 })}
             className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="username" type="text" />
-          {errors.name && <p className='text-red-700 '>Please check the username</p>}
+          {errors.name && <p className='text-red-700 '>Please check the name</p>}
         </div>
         <div className="mb-4">
           <label className="block text-gray-700 text-sm font-bold mb-2">
@@ -52,13 +52,13 @@ const ContactForm = () => {
         </div>
         <div className="mb-4">
           <label className="block text-gray-700 text-sm font-bold mb-2">
-            Tell us more about you
+            Solana Wallet
           </label>
-          <textarea placeholder="hello@myemail.com" {...register('message', {
-            required: true, minLength: 10
+          <input placeholder="0xasd023..." {...register('solana', {
+            required: true,
           })}
-            className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="username" type="textarea" />
-          {errors.message && <p className='text-red-700 '>Please share with us. Min. 10 characters</p>}
+            className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="username" type="text" />
+          {errors.email && <p className='text-red-700 '>Please check the solana wallet</p>}
         </div>
         <div className="flex items-center">
           <Button className="w-full" type='submit'>Submit</Button>
@@ -68,5 +68,5 @@ const ContactForm = () => {
   );
 };
 
-export default ContactForm;
+export default HellistForm;
 

@@ -1,8 +1,11 @@
 import React from 'react';
 import { Button, Container } from '.';
 import { Reveal } from 'react-awesome-reveal';
-import { fadeInDownShorter2, fadeInLeft } from '@/keyframes';
+import { fadeInDownShorter2, fadeInLeft, fadeInUp } from '@/keyframes';
 import Image from 'next/image';
+
+
+
 const AboutUs = () => {
   return (
     <Container className={'mb-44 scroll-mt-10'} id='about'>
@@ -29,14 +32,71 @@ const AboutUs = () => {
           </Reveal>
         </div>
         <div className='flex-1 ml-0 sm:ml-10 lg:ml-20'>
-          <h3 className='font-bold text-3xl mb-4'>Resume</h3>
-          <p className='mb-3'>Hypnofrens focuses on establishing a brand IRL through partnerships with companies
-            around the world. In addition to a partnership with an animation studio and writers
-            for the creation of an animated series at the same time that we are preparing the next
-            collection called "The Sensors". <br />
-            Enabling us to generate a revenue share for our NFT holders:
-            a) 20% to holders,
-            b) 10% to charity.</p>
+          <div className='grid grid-cols-3 gap-3 mb-3'>
+            <Reveal keyframes={fadeInLeft} duration={500} delay={200}>
+              <div>
+                <p className='font-bold text-2xl mb-1'>6666</p>
+                <p className='opacity-50 '>NFTs</p>
+              </div>
+            </Reveal>
+            <Reveal keyframes={fadeInLeft} duration={500} delay={400}>
+              <div>
+                <p className='font-bold text-2xl mb-1'>0 $SOL</p>
+                <p className='opacity-50 '>Pre-Sale</p>
+              </div>
+            </Reveal>
+            <Reveal keyframes={fadeInLeft} duration={500} delay={600}>
+              <div>
+                <p className='font-bold text-2xl mb-1'>0.5 $SOL</p>
+                <p className='opacity-50 '>Public</p>
+              </div>
+            </Reveal>
+
+            <Reveal keyframes={fadeInLeft} duration={500} delay={600}>
+              <div>
+                <p className='font-bold text-2xl mb-1'>4000</p>
+                <p className='opacity-50 '>Hellisted</p>
+              </div>
+            </Reveal>
+
+            <Reveal keyframes={fadeInLeft} duration={500} delay={600}>
+              <div>
+                <p className='font-bold text-2xl mb-1'>10.SEP.22</p>
+                <p className='opacity-50 '>at 11:00 CT</p>
+              </div>
+            </Reveal>
+
+            <Reveal keyframes={fadeInLeft} duration={500} delay={600}>
+              <div>
+                <p className='font-bold text-2xl mb-1'>10.SEP.22</p>
+                <p className='opacity-50 '>at 12:00 CT</p>
+              </div>
+            </Reveal>
+          </div>
+
+          <div className='flex items-center justify-between mb-10'>
+            <Reveal keyframes={fadeInUp} duration={1000} delay={400}>
+              <Button className='flex items-center content-center mb-3'
+                onClick={() => window.open("https://twitter.com/hypnofrensNFT", "_blank")}     >
+                <ion-icon name="logo-twitter"></ion-icon> @hypnofrensNFT
+              </Button>
+            </Reveal>
+
+            <Reveal keyframes={fadeInUp} duration={1000} delay={400}>
+              <Button className='flex items-center content-center ml-2 mb-3'
+                onClick={() => window.open("https://discord.gg/FnbxCXUNtz", "_blank")}     >
+                <ion-icon name="logo-discord"></ion-icon> hypnofrensNFT
+              </Button>
+            </Reveal>
+
+            <Reveal keyframes={fadeInUp} duration={1000} delay={400}>
+              <Button className='flex items-center content-center ml-2 mb-3'
+                onClick={() => window.open("https://instagram.com/hypnofrensNFT", "_blank")}     >
+                <ion-icon name="logo-instagram"></ion-icon> hypnofrensNFT
+              </Button>
+            </Reveal>
+          </div>
+
           <h3 className='font-bold text-2xl mb-3'>A- Market</h3>
           <p className='mb-3 '>
             We're building an ecosystem of commercial channels spanning across web three,

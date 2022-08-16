@@ -96,7 +96,7 @@ const ContentSidebar = ({ toggleMenu }) => {
           FAQ
         </a>
       </Link>
-      <Link href='/contact'>
+      <Link href='/hellist'>
         <a
           onClick={toggleMenu}
           className='mb-3 rounded-xl btn_primary px-2 sm:mb-0 ml-0 sm:ml-7 mr-0 sm:mr-7'

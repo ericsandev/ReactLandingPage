@@ -6,19 +6,15 @@ import {
   Collections,
   Container,
   FAQ,
-  FeaturedArtworks,
   Footer,
   Hero,
   Navbar,
-  Sponsor,
   Team,
+  Marketing
 } from '@/components';
 import { Reveal } from 'react-awesome-reveal';
 import { fadeInDownShorter } from '@/keyframes';
 import { Helmet } from 'react-helmet';
-
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Form from '@/components/ContactForm';
 
 const Home = () => {
   return (
@@ -28,6 +24,7 @@ const Home = () => {
         <meta name='description' content='Hypnofrens focuses on establishing a brand IRL through partnerships with companies around the world. In addition to a partnership with an animation studio and writers for the creation of an animated series at the same time that we are preparing the next collection called "The Sensors".' />
       </Helmet>
       <Navbar />
+      <Marketing />
       <Hero />
       <AboutUs />
       <Collections />

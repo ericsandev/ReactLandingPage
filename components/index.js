@@ -14,6 +14,8 @@ import NFTItem from './NFTItem';
 import Sponsor from './Sponsor';
 import Team from './Team';
 import ContactForm from './ContactForm';
+import Marketing from './Marketing';
+import HellistForm from './HellistForm';
 
 export {
   FAQ,
@@ -32,4 +34,6 @@ export {
   Input,
   Hero,
   ContactForm,
+  Marketing,
+  HellistForm
 };

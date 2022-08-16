@@ -38,9 +38,9 @@ const Footer = () => {
               <Link href='/#team'>
                 <a className='mb-4 opacity-50'>Our Team</a>
               </Link>
-              {/* <Link href='/contact'>
+              <Link href='/contact'>
                 <a className='mb-4 opacity-50'>Partner With Us</a>
-              </Link> */}
+              </Link>
             </div>
           </div>
           <div>
@@ -56,7 +56,7 @@ const Footer = () => {
               </Button>
               <Button className='flex items-center content-center mb-3'
                 onClick={() => window.open("https://discord.gg/FnbxCXUNtz", "_blank")}     >
-                <ion-icon name="logo-discord"></ion-icon> Holders Only
+                <ion-icon name="logo-discord"></ion-icon> Join now!
               </Button>
             </div>
           </div>

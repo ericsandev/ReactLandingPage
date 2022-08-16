@@ -99,7 +99,7 @@ export const list_top_creator = [
 export const list_FAQ = [
   {
     id: 1,
-    title: 'How can iget access to the whitelist?',
+    title: 'How can iget access to the HELLIST (whitelist)?',
     desc: 'You can get access to WL by participating campaigns on Twitter or to join our WL contest on Discord.',
   },
   {
@@ -110,22 +110,22 @@ export const list_FAQ = [
   {
     id: 3,
     title: 'How much will it cost?',
-    desc: 'Pre Sale FREE, Public Mint will be 0.5 $SOL',
+    desc: 'Pre Sale FREE, Public Mint will be 0.5 $SOL.',
   },
   {
     id: 4,
     title: 'What is your revenue model?',
-    desc: 'We are keeping 10% of hypnofrens for the 3 founders',
+    desc: 'We are keeping 10% of hypnofrens for the 3 founders.',
   },
   {
     id: 5,
     title: 'How were spawn list spots distributed?',
-    desc: 'All spots were given out to the community through discord or Twitter, 1 Spot = 2 mints p/user. Presale 1 Spot = 3 mints p/user',
+    desc: 'All spots were given out to the community through discord or Twitter, 1 Spot = 2 mints p/user. Presale 1 Spot = 3 mints p/user.',
   },
   {
     id: 6,
-    title: 'Extra',
-    desc: 'Free pass to the next collections of WeirdAmigos',
+    title: 'Other collections?',
+    desc: 'Free pass to the "The Sensors" collections and other selected collections.',
   },
 ];
 

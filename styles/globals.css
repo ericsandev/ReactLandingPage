@@ -20,6 +20,7 @@
   --primary: #58c3cf;
   --primary-text: #1a1a1a;
   --pink: #ff97e1;
+  --secondary: #212121;
   --secondary-text: #ffffff;
   --accent: #505050;
   --gray: #312f32;
@@ -40,6 +41,14 @@
     rgb(0, 0, 0) 50%
   );
 }
+.hell_bg {
+  background: rgb(104, 6, 6);
+  background: linear-gradient(
+    95deg,
+    rgb(100, 0, 0) 0%,
+    rgb(82, 3, 3) 50%
+  );
+}
 
 .btn_primary:hover {
   background:  #b90000;
@@ -58,8 +67,14 @@
     rgb(54, 22, 22) 89%
   );
   color: rgb(255, 255, 255);
-  font-size:32px;
-  font-family: var(--font-bahiana)
+  font-size:24px;
+  font-family: var(--font-bahiana);
+  display:block;
+}
+.btn_secondary{
+  font-size:24px;
+  font-family: var(--font-bahiana);
+  display:block;
 }
 
 .btn_primary_outline {
@@ -70,8 +85,14 @@
       rgb(185, 0, 0) 15%,
       rgb(63, 15, 15) 89%
     );
+    font-size:24px;
+    font-family: var(--font-bahiana);
+    display:block;
 }
 
+h1{
+  line-height: 1.1 !important;
+}
 .float {
   animation: float 6s ease-in-out infinite;
 }

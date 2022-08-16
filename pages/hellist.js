@@ -4,33 +4,31 @@ import {
   Footer,
   Hero,
   Navbar,
-  ContactForm,
+  HellistForm,
 } from '@/components';
 import React from 'react';
-import { Reveal } from 'react-awesome-reveal';
-import { fadeInDownShorter } from '@/keyframes';
 import {
   Helmet
 } from 'react-helmet';
 
-const Contact = () => {
+const Hellist = () => {
   return (
-    <div className='h-full hell_bg text-white overflow-hidden' id='top'>
+    <div className='h-full main_bg text-white overflow-hidden' id='top'>
       <Helmet>
-        <title>Partner With Us | Hypnofrens NFT</title>
-        <meta name='description' content='Partner With Us Hypnofrens' />
+        <title>Hypnofrens | HELList NFT</title>
+        <meta name='description' content='Hellist Hypnofrens' />
       </Helmet>
       <Navbar />
       <h1 className='text-3xl lg:text-3xl text-center font-bold mb-5' style={{
         fontFamily: "var(--font-bahiana)", fontSize: '74px'
       }} >
-        Partner With Us
+        HELLIST
       </h1>
-      <ContactForm />
+      <HellistForm />
       <FAQ />
       <Footer />
     </div>
   );
 };
 
-export default Contact;
+export default Hellist;

@@ -62,7 +62,11 @@ joonacode@gmail.com
 
 Project Link: [https://github.com/joonacode/psychoart_landing_page.git](https://github.com/joonacode/psychoart_landing_page.git)
 
+<!-- Deploy -->
+## Deployment
 
+npm run build
+npm run start
 
 <!-- ACKNOWLEDGEMENTS -->
 ## Acknowledgements
