@@ -36,7 +36,7 @@ const ContactForm = () => {
           <label className="block text-gray-700 text-sm font-bold mb-2">
             Twitter username without @
           </label>
-          <input placeholder="@username" {...register('twitter', { required: true, minLength: 3 })} className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="username" type="text" />
+          <input placeholder="@username" {...register('twitter', { required: true, minLength: 4, maxLength: 50, pattern: /^[a-zA-Z0-9_.-]*$/ })} className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="username" type="text" />
           {errors.twitter && <p className='text-red-700 '>Please check the username</p>}
         </div>
         <div className="mb-4">

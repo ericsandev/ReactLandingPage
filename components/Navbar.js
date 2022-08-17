@@ -99,12 +99,27 @@ const ContentSidebar = ({ toggleMenu }) => {
       <Link href='/hellist'>
         <a
           onClick={toggleMenu}
-          className='mb-3 rounded-xl btn_primary px-2 sm:mb-0 ml-0 sm:ml-7 mr-0 sm:mr-7'
+          className='mb-3 rounded-xl btn_primary text-3xl px-2 sm:mb-0 ml-0 sm:ml-7 mr-0 sm:mr-7'
         >
           HELLIST
         </a>
       </Link>
+      <div className='flex flex-row'>
+        <Button className='btn_primary_outline'
+          onClick={() => window.open("https://twitter.com/hypnofrensNFT", "_blank")}     >
+          <ion-icon name="logo-twitter"></ion-icon>
+        </Button>
+        <Button className='btn_primary_outline'
+          onClick={() => window.open("https://instagram.com/hypnofrensNFT", "_blank")}     >
+          <ion-icon name="logo-instagram"></ion-icon>
+        </Button>
+        <Button className='btn_primary_outline'
+          onClick={() => window.open("https://discord.gg/FnbxCXUNtz", "_blank")}     >
+          <ion-icon name="logo-discord"></ion-icon>
+        </Button>
+      </div>
     </div>
+
   );
 };
 

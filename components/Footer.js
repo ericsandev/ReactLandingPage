@@ -44,19 +44,19 @@ const Footer = () => {
             </div>
           </div>
           <div>
-            <p className='font-bold text-xl mb-5'>Contact</p>
-            <div className='flex flex-col'>
-              <Button className='flex items-center content-center mb-3'
+            <p className='font-bold text-xl mb-5'>Community</p>
+            <div className='flex flex-row'>
+              <Button className='btn_primary_outline'
                 onClick={() => window.open("https://twitter.com/hypnofrensNFT", "_blank")}     >
-                <ion-icon name="logo-twitter"></ion-icon> @hypnofrensNFT
+                <ion-icon name="logo-twitter"></ion-icon>
               </Button>
-              <Button className='flex items-center content-center mb-3'
+              <Button className='btn_primary_outline'
                 onClick={() => window.open("https://instagram.com/hypnofrensNFT", "_blank")}     >
-                <ion-icon name="logo-instagram"></ion-icon> @hypnofrensNFT
+                <ion-icon name="logo-instagram"></ion-icon>
               </Button>
-              <Button className='flex items-center content-center mb-3'
+              <Button className='btn_primary_outline'
                 onClick={() => window.open("https://discord.gg/FnbxCXUNtz", "_blank")}     >
-                <ion-icon name="logo-discord"></ion-icon> Join now!
+                <ion-icon name="logo-discord"></ion-icon>
               </Button>
             </div>
           </div>

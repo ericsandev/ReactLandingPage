@@ -30,14 +30,14 @@ const HellistForm = () => {
           </label>
           <input placeholder="Your name" {...register('name', { required: true, minLength: 3 })}
             className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="username" type="text" />
-          {errors.name && <p className='text-red-700 '>Please check the name</p>}
+          {errors.name && <p className='text-[#f00]'>Please check the name</p>}
         </div>
         <div className="mb-4">
           <label className="block text-gray-700 text-sm font-bold mb-2">
             Twitter username without @
           </label>
-          <input placeholder="@username" {...register('twitter', { required: true, minLength: 3 })} className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="username" type="text" />
-          {errors.twitter && <p className='text-red-700 '>Please check the username</p>}
+          <input placeholder="@username" {...register('twitter', { required: true, minLength: 4, maxLength: 50, pattern: /^[a-zA-Z0-9_.-]*$/ })} className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="username" type="text" />
+          {errors.twitter && <p className='text-[#f00]'>Please check the username</p>}
         </div>
         <div className="mb-4">
           <label className="block text-gray-700 text-sm font-bold mb-2">
@@ -48,7 +48,7 @@ const HellistForm = () => {
             pattern: /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
           })}
             className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="username" type="text" />
-          {errors.email && <p className='text-red-700 '>Please check the email</p>}
+          {errors.email && <p className='text-[#f00]'>Please check the email</p>}
         </div>
         <div className="mb-4">
           <label className="block text-gray-700 text-sm font-bold mb-2">
@@ -58,7 +58,7 @@ const HellistForm = () => {
             required: true,
           })}
             className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="username" type="text" />
-          {errors.email && <p className='text-red-700 '>Please check the solana wallet</p>}
+          {errors.email && <p className='text-[#f00]'>Please check the solana wallet</p>}
         </div>
         <div className="flex items-center">
           <Button className="w-full" type='submit'>Submit</Button>

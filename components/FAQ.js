@@ -21,10 +21,10 @@ const FAQ = () => {
   };
 
   return (
-    <Container className={'mb-44 scroll-mt-10'} id='faq'>
+    <Container className={'mt-44 mb-44 scroll-mt-10'} id='faq'>
       <div className='text-center mb-10'>
         <h2 className='font-bold mx-auto leading-snug w-full sm:w-[400px] text-3xl mb-2'>
-          Freaquently Asked Question
+          Frequently Asked Question
         </h2>
       </div>
       <div className='grid grid-cols-1 md:grid-cols-2 gap-4'>
@@ -47,7 +47,7 @@ const AccordionItem = ({ data, toggleFaq }) => {
   return (
     <div
       onClick={() => toggleFaq(data)}
-      className='mb-4 pb-2 border-b-2 border-b-gray-500'
+      className='mb-4 pb-2 border-b-1 border-b-gray-500'
     >
       <div className='flex pb-3 cursor-pointer justify-between items-center'>
         <p className={data.status ? 'opacity-90' : 'opacity-50'}>

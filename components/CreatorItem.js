@@ -3,7 +3,7 @@ import React from 'react';
 import { Button } from '.';
 
 const CreatorItem = ({ data }) => {
-  const { image, bgimage, username, description, product_name, button, button_url } = data;
+  const { image, bgimage, username, description, product_name, button, url } = data;
   return (
     <div className='hover:bg-[#141313] transition duration-300 ease-in-out bg-[#ffffff1a] overflow-hidden rounded-lg shadow-lg'>
       <div className='rounded-lg overflow-hidden mb-3 relative h-[250px] w-full'>
@@ -31,11 +31,11 @@ const CreatorItem = ({ data }) => {
           {product_name} | {description}
         </p>
 
-        <Button className='w-full' variant={'primary'} href="button_url">
+        <Button className='w-full text-3xl' variant={'primary'} onClick={() => window.open(`${url}`, "_blank")}>
           {button}
         </Button>
       </div>
-    </div>
+    </div >
   );
 };
 

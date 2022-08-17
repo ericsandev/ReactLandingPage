@@ -7,7 +7,7 @@ import Background from '../public/hero/nightmare.jpg';
 
 const sectionStyle = {
   width: "100%",
-  height: "100vh",
+  height: "auto",
   backgroundImage: `url(${Background.src})`,
   backgroundSize: 'cover',
 };
@@ -22,7 +22,7 @@ const Marketing = () => {
             <h1 className='text-2xl lg:text-3xl font-bold mb-5' style={{
               fontFamily: "var(--font-bahiana)", fontSize: '74px'
             }} >
-              🚨The Princess was captured.🚨
+              🚨The Princess was captured.
             </h1>
           </Reveal>
           <Reveal keyframes={fadeInDownShorter} duration={1000} delay={800}>
@@ -36,7 +36,7 @@ const Marketing = () => {
               <Button
                 isLink
                 href={'https://discord.gg/FnbxCXUNtz?src=web'}
-                className={'mr-3'}
+                className={'mr-3 text-2xl'}
                 variant={'primary'}
               >
                 <ion-icon name="logo-discord"></ion-icon> JOIN THE INVESTIGATE
@@ -46,7 +46,7 @@ const Marketing = () => {
               <Button
                 isLink
                 href={'/#intro'}
-                className={'mr-3'}
+                className={'mr-3 text-2xl'}
                 variant={'outlinePrimary'}
               >
                 Learn more

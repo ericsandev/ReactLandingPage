@@ -8,7 +8,7 @@ import Image from 'next/image';
 
 const AboutUs = () => {
   return (
-    <Container className={'mb-44 scroll-mt-10'} id='about'>
+    <Container className={'mb-44 scroll-mt-10 w-full sm:w-[80%]'} id='about'>
       <div className='text-center mb-8'>
         <h2 className='font-bold text-3xl mb-2'>BLUEPRINT</h2>
         <Reveal keyframes={fadeInDownShorter2} duration={800} delay={100}>
@@ -17,8 +17,8 @@ const AboutUs = () => {
           </p>
         </Reveal>
       </div>
-      <div className='flex items-center'>
-        <div className='w-[44%] hidden sm:block'>
+      <div className='flex flex-col md:flex-row items-center'>
+        <div className='w-full lg:w-[44%] hidden sm:block'>
           <Reveal keyframes={fadeInLeft} triggerOnce>
             <div className='relative w-full h-[700px] rounded-2xl overflow-hidden'>
               <Image
@@ -31,98 +31,83 @@ const AboutUs = () => {
             </div>
           </Reveal>
         </div>
-        <div className='flex-1 ml-0 sm:ml-10 lg:ml-20'>
-          <div className='grid grid-cols-3 gap-3 mb-3'>
-            <Reveal keyframes={fadeInLeft} duration={500} delay={200}>
-              <div>
-                <p className='font-bold text-2xl mb-1'>6666</p>
-                <p className='opacity-50 '>NFTs</p>
-              </div>
-            </Reveal>
-            <Reveal keyframes={fadeInLeft} duration={500} delay={400}>
-              <div>
-                <p className='font-bold text-2xl mb-1'>0 $SOL</p>
-                <p className='opacity-50 '>Pre-Sale</p>
-              </div>
-            </Reveal>
-            <Reveal keyframes={fadeInLeft} duration={500} delay={600}>
-              <div>
-                <p className='font-bold text-2xl mb-1'>0.5 $SOL</p>
-                <p className='opacity-50 '>Public</p>
-              </div>
-            </Reveal>
-
-            <Reveal keyframes={fadeInLeft} duration={500} delay={600}>
-              <div>
-                <p className='font-bold text-2xl mb-1'>4000</p>
-                <p className='opacity-50 '>Hellisted</p>
-              </div>
-            </Reveal>
-
-            <Reveal keyframes={fadeInLeft} duration={500} delay={600}>
-              <div>
-                <p className='font-bold text-2xl mb-1'>10.SEP.22</p>
-                <p className='opacity-50 '>at 11:00 CT</p>
-              </div>
-            </Reveal>
-
-            <Reveal keyframes={fadeInLeft} duration={500} delay={600}>
-              <div>
-                <p className='font-bold text-2xl mb-1'>10.SEP.22</p>
-                <p className='opacity-50 '>at 12:00 CT</p>
-              </div>
-            </Reveal>
-          </div>
-
-          <div className='flex items-center justify-between mb-10'>
-            <Reveal keyframes={fadeInUp} duration={1000} delay={400}>
-              <Button className='flex items-center content-center mb-3'
-                onClick={() => window.open("https://twitter.com/hypnofrensNFT", "_blank")}     >
-                <ion-icon name="logo-twitter"></ion-icon> @hypnofrensNFT
-              </Button>
-            </Reveal>
-
-            <Reveal keyframes={fadeInUp} duration={1000} delay={400}>
-              <Button className='flex items-center content-center ml-2 mb-3'
-                onClick={() => window.open("https://discord.gg/FnbxCXUNtz", "_blank")}     >
-                <ion-icon name="logo-discord"></ion-icon> hypnofrensNFT
-              </Button>
-            </Reveal>
-
-            <Reveal keyframes={fadeInUp} duration={1000} delay={400}>
-              <Button className='flex items-center content-center ml-2 mb-3'
-                onClick={() => window.open("https://instagram.com/hypnofrensNFT", "_blank")}     >
-                <ion-icon name="logo-instagram"></ion-icon> hypnofrensNFT
-              </Button>
-            </Reveal>
-          </div>
-
-          <h3 className='font-bold text-2xl mb-3'>A- Market</h3>
+        <div className='w-full lg:w-[44%]  ml-0 sm:ml-10 lg:ml-20'>
+          <h3 className='font-bold text-2xl mb-3'>⚡ Market</h3>
           <p className='mb-3 '>
             We're building an ecosystem of commercial channels spanning across web three,
             through partnerships with brands.<br />
             Your <strong>Hypnofrens will give you exclusive access</strong> to digital and physical merch,
             products and events.{' '}
           </p>
-          <h3 className='font-bold text-2xl mb-3'>B- Growing</h3>
+          <h3 className='font-bold text-2xl mb-3'>⚡ Growing</h3>
           <p className='mb-3 '>
             We will grow the Hypnofrens brand through online guerrilla marketing & outdoor advertising campaigns
             in the weeks following mint. We will also auction 1 of 1 Hypnofrens for world-changing causes, charity and
             high-visibility collabs.{' '}
           </p>
-          <h3 className='font-bold text-2xl mb-3'>C- Beyond</h3>
-          <p className='hidden lg:block mb-3 '>
+          <h3 className='font-bold text-2xl mb-3'>⚡ Beyond</h3>
+          <p className='lg:block mb-3 '>
             Our team will work alongside the community to drop lo-fi mixtapes and other forms of
             collective artistic expression. We will continue to create gorgeous concept art and
             beautifully written folk tales... And future holder-only NFT drops.{' '}
           </p>
-          <h3 className='font-bold text-2xl mb-3'>D- Share ♥</h3>
-          <p className='hidden lg:block mb-3 '>
+          <h3 className='font-bold text-2xl mb-3'>⚡ Share </h3>
+          <p className='lg:block mb-3 '>
             Our website will display all 6,666 Hypnofrens and we will also
             curate a gallery of our <span>favourite fan art and the artists behind it</span>, as well as work
             with other NFT brands and artists to bring our digital art to physical galleries & exhibits.{' '}
           </p>
+          <div className='grid grid-cols-2 lg:grid-cols-2 lg:gap-3 mb-3'>
+            <Reveal keyframes={fadeInLeft} duration={500} delay={200}>
+              <div className='text-center '>
+                <p className='font-bold text-2xl mb-1'>6666</p>
+                <p className='opacity-50 '>NFTs</p>
+              </div>
+            </Reveal>
+            <Reveal keyframes={fadeInLeft} duration={500} delay={600}>
+              <div className='text-center '>
+                <p className='font-bold text-2xl mb-1'>10.09.22</p>
+                <p className='opacity-50 '>Launch Date</p>
+              </div>
+            </Reveal>
+            <Reveal keyframes={fadeInLeft} duration={500} delay={400}>
+              <div className='text-center '>
+                <p className='font-bold text-2xl mb-1'>FREE MINT</p>
+                <p className='opacity-50 '>Pre-Sale</p>
+              </div>
+            </Reveal>
+            <Reveal keyframes={fadeInLeft} duration={500} delay={600}>
+              <div className='text-center '>
+                <p className='font-bold text-2xl mb-1'>0.5 $SOL</p>
+                <p className='opacity-50 '>Public</p>
+              </div>
+            </Reveal>
+          </div>
+          <div className='flex-row'>
+            <h2 className="text-[#ff4242] font-bold text-center my-3">Join our community</h2>
+            <div className='flex items-center justify-between mb-10'>
+              <Reveal keyframes={fadeInUp} duration={1000} delay={400}>
+                <Button className='flex items-center content-center mb-3'
+                  onClick={() => window.open("https://twitter.com/hypnofrensNFT", "_blank")}     >
+                  <ion-icon name="logo-twitter"></ion-icon>
+                </Button>
+              </Reveal>
 
+              <Reveal keyframes={fadeInUp} duration={1000} delay={400}>
+                <Button className='flex items-center content-center mb-3'
+                  onClick={() => window.open("https://discord.gg/FnbxCXUNtz", "_blank")}     >
+                  <ion-icon name="logo-discord"></ion-icon>
+                </Button>
+              </Reveal>
+
+              <Reveal keyframes={fadeInUp} duration={1000} delay={400}>
+                <Button className='flex items-center content-center mb-3'
+                  onClick={() => window.open("https://instagram.com/hypnofrensNFT", "_blank")}     >
+                  <ion-icon name="logo-instagram"></ion-icon>
+                </Button>
+              </Reveal>
+            </div>
+          </div>
         </div>
       </div>
     </Container >

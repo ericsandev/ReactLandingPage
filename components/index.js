@@ -16,6 +16,9 @@ import Team from './Team';
 import ContactForm from './ContactForm';
 import Marketing from './Marketing';
 import HellistForm from './HellistForm';
+import CallTo from './CallTo';
+import CountdownTimer from './CountdownTimer';
+import DateTimeDisplay from './DateTimeDisplay';
 
 export {
   FAQ,
@@ -35,5 +38,8 @@ export {
   Hero,
   ContactForm,
   Marketing,
-  HellistForm
+  HellistForm,
+  CallTo,
+  CountdownTimer,
+  DateTimeDisplay
 };

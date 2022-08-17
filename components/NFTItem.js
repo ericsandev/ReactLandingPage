@@ -5,7 +5,7 @@ import Image from 'next/image';
 const NFTItem = ({ data }) => {
   const { image, username, price, product_name } = data;
   return (
-    <div className='hover:bg-[#a81c1c] transition duration-300 ease-in-out bg-[#3020201a] p-5 rounded-lg shadow-lg'>
+    <div className='hover:bg-[#181818] transition duration-300 ease-in-out bg-[#3020201a] p-5 rounded-lg shadow-lg'>
       <div className='rounded-lg overflow-hidden mb-3 relative w-full h-[400px] sm:h-[300px] lg:h-[400px]'>
         <Image
           layout='fill'

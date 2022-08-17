@@ -33,11 +33,13 @@ const Hero = () => {
           <h3 className='bg-black text-[#fc0] mb-2 text-2xl px-2 font-bold'>💠EXCLUSIVE BENEFITS</h3>
           <ul>
             <li className='bg-black text-[#4bffff] mb-2 text-xl px-2 '>⭐ WL / Free Mint to "The Sensors" collection.</li>
-            <li className='bg-black text-[#4bffff] mb-2 text-xl px-2 '>⭐ Exclusive access to other selected collections. </li>
+            <li className='bg-black text-[#4bffff] mb-2 text-xl px-2 '>⭐ Access to digital and physical merch, products and events. </li>
+            <li className='bg-black text-[#4bffff] mb-2 text-xl px-2 '>⭐ Access to other selected collections. </li>
             <li className='bg-black text-[#4bffff] mb-2 text-xl px-2 '>⭐ Artist or Writer? You can be chosen to bring the characters to life.</li>
             <li className='bg-black text-[#4bffff] mb-2 text-xl px-2 '>⭐ Being co-producer in the of the comic and animated series. </li>
             <li className='bg-black text-[#4bffff] mb-2 text-xl px-2 '>⭐ 20% of the profits will be distributed to the holders. </li>
             <li className='bg-black text-[#4bffff] mb-2 text-xl px-2 '>⭐ 10% of the profits will be distributed to charity. </li>
+
           </ul>
         </Reveal>
       </div>

@@ -81,7 +81,6 @@ export const list_top_creator = [
     url: 'https://twitter.com/MrHaelNFT',
     description: 'Designer',
     button: '@MrHaelNFT',
-    button_url: 'https://twitter.com'
   },
   {
     id: 2,
@@ -92,7 +91,7 @@ export const list_top_creator = [
     product_name: 'Co-Founder',
     description: 'Developer',
     button: '@weirdAmigos',
-    button_url: 'https://twitter.com'
+    url: 'https://twitter.com/weirdamigos'
   },
 ];
 
