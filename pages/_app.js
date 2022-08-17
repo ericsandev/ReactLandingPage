@@ -2,7 +2,7 @@ import Head from 'next/head';
 import '../styles/globals.css';
 
 function MyApp({ Component, pageProps }) {
-  const env = process.env
+
   return (
     <>
       <Head>
@@ -14,12 +14,12 @@ function MyApp({ Component, pageProps }) {
         <meta httpEquiv='Content-Type' content='text/html; charset=utf-8' />
         <meta name='viewport' content='initial-scale=1.0, width=device-width' />
         <meta property='og:type' content='website' />
-        <meta property='og:url' content={env.NEXT_PUBLIC_MAIN_URL} />
+        <meta property='og:url' content={process.env.NEXT_PUBLIC_MAIN_URL} />
         <meta property='og:title' content='Hypnofrens - The only NFT banished from hell condemned to live in the Solana blockchain.' />
         <meta property='og:description' content='Hypnofrens focuses on establishing a brand IRL through partnerships with companies around the world. In addition to a partnership with an animation studio and writers for the creation of an animated series at the same time that we are preparing the next collection called "The Sensors".' />
         <meta
           property='og:image'
-          content={env.NEXT_PUBLIC_MAIN_URL + '/preview-image.png'}
+          content={process.env.NEXT_PUBLIC_MAIN_URL + '/preview-image.png'}
         />
 
         <meta property='og:locale' content='id' />
@@ -30,13 +30,13 @@ function MyApp({ Component, pageProps }) {
         <meta property='twitter:card' content='summary_large_image' />
         <meta
           property='twitter:url'
-          content={env.NEXT_PUBLIC_MAIN_URL}
+          content={process.env.NEXT_PUBLIC_MAIN_URL}
         />
         <meta property='twitter:title' content='Hypnofrens - The only NFT banished from hell condemned to live in the Solana blockchain.' />
         <meta property='twitter:description' content='Hypnofrens focuses on establishing a brand IRL through partnerships with companies around the world. In addition to a partnership with an animation studio and writers for the creation of an animated series at the same time that we are preparing the next collection called "The Sensors".' />
         <meta
           property='twitter:image'
-          content={env.NEXT_PUBLIC_MAIN_URL + 'preview-image.png'}
+          content={process.env.NEXT_PUBLIC_MAIN_URL + 'preview-image.png'}
         />
         <link rel='shortcut icon' href='/favicon.svg' type='image/x-icon' />
         <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
