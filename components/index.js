@@ -17,8 +17,7 @@ import ContactForm from './ContactForm';
 import Marketing from './Marketing';
 import HellistForm from './HellistForm';
 import CallTo from './CallTo';
-import CountdownTimer from './CountdownTimer';
-import DateTimeDisplay from './DateTimeDisplay';
+import Mint from './Mint';
 
 export {
   FAQ,
@@ -40,6 +39,5 @@ export {
   Marketing,
   HellistForm,
   CallTo,
-  CountdownTimer,
-  DateTimeDisplay
+  Mint
 };

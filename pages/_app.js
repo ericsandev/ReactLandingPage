@@ -19,7 +19,7 @@ function MyApp({ Component, pageProps }) {
         <meta property='og:description' content='Hypnofrens focuses on establishing a brand IRL through partnerships with companies around the world. In addition to a partnership with an animation studio and writers for the creation of an animated series at the same time that we are preparing the next collection called "The Sensors".' />
         <meta
           property='og:image'
-          content={process.env.NEXT_PUBLIC_MAIN_URL + '/preview-image.png'}
+          content={process.env.NEXT_PUBLIC_MAIN_URL + 'preview-image.png'}
         />
 
         <meta property='og:locale' content='id' />
@@ -39,11 +39,12 @@ function MyApp({ Component, pageProps }) {
           content={process.env.NEXT_PUBLIC_MAIN_URL + 'preview-image.png'}
         />
         <link rel='shortcut icon' href='/favicon.svg' type='image/x-icon' />
-        <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
         <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-        <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+        <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+        <link rel="stylesheet" href="https://storage.googleapis.com/scriptslmt/0.1.3/solana.css" />
       </Head>
       <Component {...pageProps} />
+
     </>
   );
 }
