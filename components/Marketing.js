@@ -22,7 +22,7 @@ const Marketing = () => {
             <h1 className='text-2xl lg:text-3xl font-bold mb-5' style={{
               fontFamily: "var(--font-bahiana)", fontSize: '54px'
             }} >
-              🚨The first to access DC will be able to do FREE MINT. Get to HELLIST spot now!
+              🚨The first to access DC will be able to do FREE MINT. Get your HELLIST spot now!
             </h1>
           </Reveal>
           <Reveal keyframes={fadeInDownShorter} duration={1000} delay={800}>
@@ -39,7 +39,7 @@ const Marketing = () => {
                 className={'mr-3 text-3xl'}
                 variant={'primary'}
               >
-                <ion-icon name="logo-discord"></ion-icon> Get to HELLIST spot now!
+                <ion-icon name="logo-discord"></ion-icon> Get your HELLIST spot now!
               </Button>
             </Reveal>
             <Reveal keyframes={fadeInUp} duration={1000} delay={200}>
