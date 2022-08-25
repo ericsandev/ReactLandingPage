@@ -44,10 +44,10 @@
 }
 
 .hell_bg {
-  background: #b51f35;
+  background: #FF0000;
   background: linear-gradient(
     190deg,
-    #b51f35 0%,
+    #FF0000 0%,
     #111011 50%
   );
 }
@@ -62,10 +62,10 @@
   color: #fff;
 }
 .btn_primary{
-  background:  #b51f35;
+  background:  #FF0000;
   background: linear-gradient(
     193deg,
-    #b51f35 15%,
+    #FF0000 15%,
     #530e18 89%
   );
   color: rgb(255, 255, 255);

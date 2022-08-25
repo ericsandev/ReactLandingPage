@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import ReactDOM from 'react-dom';
 import { useForm } from "react-hook-form";
 import {
@@ -9,26 +9,35 @@ import emailjs from '@emailjs/browser';
 
 
 const HellistForm = () => {
+  const [statusMessage, setStatusMessage] = useState("")
   const { register, handleSubmit, formState: { errors } } = useForm();
 
   const sendEmail = (e) => {
+
     emailjs.sendForm(
       'service_l5ngo74',
       'template_lkmw4rk',
       'form',
       'vEWfOVnvJVo_BpYjo')
-      .then(res => console.log(res))
-      .catch(error => console.log(error));
+      .then(res => {
+        setStatusMessage(`👍 Email sent success`);
+        console.log(res)
+        form.reset();
+      })
+      .catch(error => {
+        setStatusMessage(`${error.text} happened`);
+        console.log(error)
+      });
   }
 
   return (
-    <Container className="w-full flex justify-center pt-4">
-      <form className="bg-white w-[340px] shadow-md rounded px-8 pt-6 pb-8 mb-4" onSubmit={handleSubmit(sendEmail)}>
+    <Container className="w-[60%] flex flex-col justify-center pt-4">
+      <form id="form" className="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4" onSubmit={handleSubmit(sendEmail)}>
         <div className="mb-4">
           <label className="block text-gray-700 text-sm font-bold mb-2" >
             Name
           </label>
-          <input placeholder="Your name" {...register('name', { required: true, minLength: 3 })}
+          <input onChange={event => setFirst(event.target.value)} placeholder="Your name" {...register('name', { required: true, minLength: 3 })}
             className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="username" type="text" />
           {errors.name && <p className='text-[#f00]'>Please check the name</p>}
         </div>
@@ -64,6 +73,7 @@ const HellistForm = () => {
           <Button className="w-full" type='submit'>Submit</Button>
         </div>
       </form>
+      <p className='text-2xl text-center'>{statusMessage}</p>
     </Container >
   );
 };
