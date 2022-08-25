@@ -31,7 +31,7 @@ const HellistForm = () => {
   }
 
   return (
-    <Container className="w-[60%] flex flex-col justify-center pt-4">
+    <Container className="w-full flex flex-col justify-center pt-4">
       <form id="form" className="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4" onSubmit={handleSubmit(sendEmail)}>
         <div className="mb-4">
           <label className="block text-gray-700 text-sm font-bold mb-2" >
