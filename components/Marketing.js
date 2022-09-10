@@ -8,7 +8,7 @@ import Background from '../public/hero/nightmare.jpg';
 const sectionStyle = {
   width: "100%",
   height: "auto",
-  backgroundImage: `url(${Background.src})`,
+  backgroundColor: "#e62039",
   backgroundSize: 'cover',
 };
 
@@ -22,32 +22,32 @@ const Marketing = () => {
             <h1 className='text-2xl lg:text-3xl font-bold mb-5' style={{
               fontFamily: "var(--font-bahiana)", fontSize: '54px'
             }} >
-              🚨The first to access DC will be able to do FREE MINT. Get your HELLIST spot now!
+              🚨MINTING DAY🚨
             </h1>
           </Reveal>
           <Reveal keyframes={fadeInDownShorter} duration={1000} delay={800}>
             <p className='mb-8 lg:text-2xl text-xl '>
-              Help us find the Princess, any clues that can help find her will be rewarded
+              It's time for all hypnofrens in HELLIST to assert their POWER and join our army against The Sensors
             </p>
           </Reveal>
 
           <div className='flex mb-10'>
-            <Reveal keyframes={fadeInUp} duration={1000} delay={200}>
+            {/* <Reveal keyframes={fadeInUp} duration={1000} delay={200}>
               <Button
                 isLink
-                href={'https://discord.gg/FnbxCXUNtz?src=web'}
+                href={'https://www.launchmynft.io/collections/3j7fmyzsturSNz7NPXBjBu8aybgQJUZz1GG2eaLkQo16/vV3za9meSnBqSZpkRvYU'}
                 className={'mr-3 text-3xl'}
                 variant={'primary'}
               >
-                <ion-icon name="logo-discord"></ion-icon> Get your HELLIST spot now!
+                <ion-icon name="logo-discord"></ion-icon> HELLIST MINTING NOW!
               </Button>
-            </Reveal>
+            </Reveal> */}
             <Reveal keyframes={fadeInUp} duration={1000} delay={200}>
               <Button
                 isLink
                 href={'/#intro'}
                 className={'mr-3 text-3xl'}
-                variant={'outlinePrimary'}
+                variant={'primary'}
               >
                 Learn more
               </Button>
@@ -63,7 +63,7 @@ const Marketing = () => {
               layout='fill'
               objectFit='contain'
               objectPosition={'center'}
-              src='/hero/wanted.gif'
+              src='/creators/preview.gif'
               alt='hypnofrens'
             />
           </div>

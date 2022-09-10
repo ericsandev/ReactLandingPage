@@ -26,7 +26,6 @@ const Home = () => {
       <Collections />
       <Team />
       <FAQ />
-      <CallTo />
       <Footer />
     </div>
   );
