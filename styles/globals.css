@@ -29,9 +29,11 @@
   --accent-text: #ffffff;
 }
 
-.body{
+body{
   font-size:22px;
   font-family: var(--font-kanit);
+  background-color: #010101;
+  height: 100vh;
 
 }
 .main_bg {

@@ -12,21 +12,14 @@ import {
   Team,
   Marketing,
   CallTo,
-  Mint
+  Social,
+  Coming
 } from '@/components';
 
 const Home = () => {
   return (
     <div className='h-full main_bg text-white overflow-hidden' id='top'>
-      <Navbar />
-      <Mint />
-      <Marketing />
-      <Hero />
-      <AboutUs />
-      <Collections />
-      <Team />
-      <FAQ />
-      <Footer />
+      <Coming />
     </div>
   );
 };

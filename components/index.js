@@ -18,6 +18,8 @@ import Marketing from './Marketing';
 import HellistForm from './HellistForm';
 import CallTo from './CallTo';
 import Mint from './Mint';
+import Coming from './Coming';
+import Social from './Social';
 
 export {
   FAQ,
@@ -39,5 +41,7 @@ export {
   Marketing,
   HellistForm,
   CallTo,
-  Mint
+  Mint,
+  Coming,
+  Social
 };
