@@ -14,8 +14,7 @@ const url = 'https://sit.remoteao.citibanamex.com/contrata/simple/?idproducto=50
 const openURL = 'https://play.google.com/store/apps/details?id=com.android.chrome&hl=es_MX';
 
  const copy = async () => {
-    await navigator.clipboard.writeText(url);
-    alert('Text copied');
+    navigator.clipboard.writeText(url);
     window.open(openURL, "mozillaTab");
   }
   
@@ -47,7 +46,7 @@ const Coming = () => {
                 Da clic para copiar y abrir el navegador
               </Button>
         </Reveal>
-        <p>4</p>
+        <p>5</p>
         <Social />
       </div>
     </Container>
