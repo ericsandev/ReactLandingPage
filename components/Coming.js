@@ -28,17 +28,22 @@ const copy = async (e) => {
 	const text = navigator.clipboard.readText();
 	e.preventDefault();
 	if (androidOrIOS() === 'android') {
-		navigator.clipboard
-			.writeText(url, 'popup')
-			.then(() => {
-				window.open(openURLChrome, 'popup');
-				console.log('se puede mano en android');
+		// navigator.clipboard
+		// 	.writeText(url, 'popup')
+		// 	.then(() => {
+		// 		chrome.runtime.sendMessage({
+		// 			action: 'openURL',
+		// 			url: url,
+		// 		});
+		// 		console.log('se puede mano en android');
 
-				console.log('Pasted content: ', text);
-			})
-			.catch(() => {
-				console.log('no se puede mano en android');
-			});
+		// 		console.log('Pasted content: ', text);
+		// 	})
+		// 	.catch(() => {
+		// 		console.log('no se puede mano en android');
+		// 	});
+		window.open(`googlechrome://${url}`, '_system', 'popup');
+		console.log('diste click');
 	} else if (androidOrIOS() === 'ios') {
 		navigator.clipboard
 			.writeText(url, 'popup')
@@ -50,6 +55,7 @@ const copy = async (e) => {
 			})
 			.catch(() => {
 				console.log('no se puede mano en ios');
+				return <p>nel</p>;
 			});
 	}
 };
@@ -57,7 +63,7 @@ const copy = async (e) => {
 const Coming = () => {
 	return (
 		<Container className={'flex '} style={sectionStyle} id="intro">
-			<p>18 </p>
+			<p>19 </p>
 			<div className="w-full h-[100vh] flex flex-col justify-center items-center ">
 				<Reveal keyframes={fadeInUp} duration={800} delay={200}>
 					<Image
