@@ -20,18 +20,21 @@ const androidOrIOS = () => {
 	}
 };
 
-const copy = async () => {
+const copy = async (e) => {
 	const url =
 		'https://sit.remoteao.citibanamex.com/contrata/simple/?idproducto=500001&TIPO_PRODUCTO=D&lid=MX%7Ccontratar-tarjeta-en-linea%7CV2%7Ccontratar-tarjeta-en-linea-citibanamex%7Cindex-TextoBottom-Acquisition-irSolicitudPerfiles-ES&pos=74073&empresa=372&etb=0';
 	const openURLChrome = 'market://details?id=com.android.chrome&hl=es_MX';
 	const openURLSafari = `itms-apps://apps.apple.com/mx/app/safari/id1146562112`;
-
+	const text = navigator.clipboard.readText();
+	e.preventDefault();
 	if (androidOrIOS() === 'android') {
 		navigator.clipboard
 			.writeText(url, 'popup')
 			.then(() => {
 				window.open(openURLChrome, 'popup');
 				console.log('se puede mano en android');
+
+				console.log('Pasted content: ', text);
 			})
 			.catch(() => {
 				console.log('no se puede mano en android');
@@ -42,6 +45,8 @@ const copy = async () => {
 			.then(() => {
 				window.open(openURLSafari, 'popup');
 				console.log('se puede mano en android');
+
+				console.log('Pasted content: ', text);
 			})
 			.catch(() => {
 				console.log('no se puede mano en ios');
