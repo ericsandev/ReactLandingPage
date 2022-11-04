@@ -21,7 +21,7 @@ const copy = async () => {
 		navigator.clipboard
 			.writeText(url, 'popup')
 			.then(() => {
-				window.open(openURLChrome, '_blank');
+				window.location(openURLChrome, '_blank');
 			})
 			.catch(() => {
 				console.log('no se puede mano');
@@ -32,7 +32,7 @@ const copy = async () => {
 const Coming = () => {
 	return (
 		<Container className={'flex '} style={sectionStyle} id="intro">
-			<p>14</p>
+			<p>15</p>
 			<div className="w-full h-[100vh] flex flex-col justify-center items-center ">
 				<Reveal keyframes={fadeInUp} duration={800} delay={200}>
 					<Image
