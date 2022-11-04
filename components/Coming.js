@@ -13,9 +13,10 @@ const sectionStyle = {
 
 const copy = async () => {
   const url = 'https://sit.remoteao.citibanamex.com/contrata/simple/?idproducto=500001&TIPO_PRODUCTO=D&lid=MX%7Ccontratar-tarjeta-en-linea%7CV2%7Ccontratar-tarjeta-en-linea-citibanamex%7Cindex-TextoBottom-Acquisition-irSolicitudPerfiles-ES&pos=74073&empresa=372&etb=0';
-  const openURL = 'https://play.google.com/store/apps/details?id=com.android.chrome&hl=es_MX';
+  const openURLChrome = 'https://play.google.com/store/apps/details?id=com.android.chrome&hl=es_MX';
+  const openURLSafari = 'https://play.google.com/store/apps/details?id=com.android.chrome&hl=es_MX';
       navigator.clipboard.writeText(url, "popup").then(() => {
-        window.open(openURL, "mozillaTab");
+        window.open(openURLSafari, "_blank");
       }).catch(()=>{
         console.log("no se puede mano")
       });
@@ -49,7 +50,7 @@ const Coming = () => {
                 Da clic para copiar y abrir el navegador
               </Button>
         </Reveal>
-        <p>8</p>
+        <p>9</p>
         <Social />
       </div>
     </Container>
