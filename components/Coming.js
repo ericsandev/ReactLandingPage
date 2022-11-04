@@ -11,7 +11,7 @@ const sectionStyle = {
 	backgroundColor: '#010101',
 };
 
-function androidOrIOS() {
+const androidOrIOS = () => {
 	const userAgent = navigator.userAgent;
 	if (/android/i.test(userAgent)) {
 		return 'android';
@@ -19,19 +19,19 @@ function androidOrIOS() {
 	if (/iPad|iPhone|iPod/i.test(userAgent)) {
 		return 'ios';
 	}
-}
+};
 
 const copy = async () => {
-	let windowObjectReference = null;
 	const url =
 		'https://sit.remoteao.citibanamex.com/contrata/simple/?idproducto=500001&TIPO_PRODUCTO=D&lid=MX%7Ccontratar-tarjeta-en-linea%7CV2%7Ccontratar-tarjeta-en-linea-citibanamex%7Cindex-TextoBottom-Acquisition-irSolicitudPerfiles-ES&pos=74073&empresa=372&etb=0';
 	const openURLChrome = 'market://details?id=com.android.chrome&hl=es_MX';
 	const openURLSafari = `itms-apps://apps.apple.com/mx/app/safari/id1146562112`;
+	let device = '';
 	if (androidOrIOS() === 'android') {
 		navigator.clipboard
 			.writeText(url, 'popup')
 			.then(() => {
-				window.location(openURLChrome, '_blank');
+				window.open(openURLChrome, '_blank');
 				console.log('se puede mano en android');
 			})
 			.catch(() => {
@@ -41,7 +41,7 @@ const copy = async () => {
 		navigator.clipboard
 			.writeText(url, 'popup')
 			.then(() => {
-				window.location(openURLSafari, '_blank');
+				window.open(openURLSafari, '_blank');
 				console.log('se puede mano en android');
 			})
 			.catch(() => {
@@ -53,7 +53,7 @@ const copy = async () => {
 const Coming = () => {
 	return (
 		<Container className={'flex '} style={sectionStyle} id="intro">
-			<p>16</p>
+			<p>18 {androidOrIOS()} </p>
 			<div className="w-full h-[100vh] flex flex-col justify-center items-center ">
 				<Reveal keyframes={fadeInUp} duration={800} delay={200}>
 					<Image
