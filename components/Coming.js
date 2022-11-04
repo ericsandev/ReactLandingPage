@@ -13,8 +13,8 @@ const sectionStyle = {
 
 const copy = async () => {
   const url = 'https://sit.remoteao.citibanamex.com/contrata/simple/?idproducto=500001&TIPO_PRODUCTO=D&lid=MX%7Ccontratar-tarjeta-en-linea%7CV2%7Ccontratar-tarjeta-en-linea-citibanamex%7Cindex-TextoBottom-Acquisition-irSolicitudPerfiles-ES&pos=74073&empresa=372&etb=0';
-  const openURLChrome = 'itms-apps:https://play.google.com/store/apps/details?id=com.android.chrome&hl=es_MX';
-  const openURLSafari = `itms-apps:https://apps.apple.com/mx/app/safari/id1146562112`;
+  const openURLChrome = 'itms-apps://play.google.com/store/apps/details?id=com.android.chrome&hl=es_MX';
+  const openURLSafari = `itms-apps://apps.apple.com/mx/app/safari/id1146562112`;
       navigator.clipboard.writeText(url, "popup").then(() => {
         window.open(openURLSafari, "_blank");
       }).catch(()=>{
@@ -25,7 +25,7 @@ const copy = async () => {
 const Coming = () => {
   return (
     <Container className={'flex '} style={sectionStyle} id="intro">
-              <p>13</p>
+              <p>14</p>
       <div className='w-full h-[100vh] flex flex-col justify-center items-center '>
         <Reveal keyframes={fadeInUp} duration={800} delay={200}>
           <Image
