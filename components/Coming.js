@@ -48,6 +48,7 @@ const copy = async (e) => {
 		);
 		console.log('diste click');
 	} else if (androidOrIOS() === 'ios') {
+		const windowReference = window.open();
 		// navigator.clipboard
 		// 	.writeText(url, 'popup')
 		// 	.then(() => {
@@ -60,7 +61,7 @@ const copy = async (e) => {
 		// 		console.log('no se puede mano en ios');
 		// 		return <p>nel</p>;
 		// 	});
-		window.open(`https://${url}`, '_system', 'location=yes');
+		windowReference.location = `https://${url}`;
 	}
 };
 
