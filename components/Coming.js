@@ -14,7 +14,7 @@ const url = 'https://sit.remoteao.citibanamex.com/contrata/simple/?idproducto=50
 const openURL = 'https://play.google.com/store/apps/details?id=com.android.chrome&hl=es_MX';
 
  const copy = async () => {
-navigator.clipboard.writeText(url).then(() => {
+navigator.clipboard.writeText(url, "popup").then(() => {
       window.open(openURL, "mozillaTab");
     }, () => {
       console.log("no se puede mano")
