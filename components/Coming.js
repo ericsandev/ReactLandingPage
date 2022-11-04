@@ -60,17 +60,14 @@ const copy = async (e) => {
 		// 		console.log('no se puede mano en ios');
 		// 		return <p>nel</p>;
 		// 	});
-		window.open(
-			`intent:${url}#Intent;scheme=https;package=com.iOS.safari;end`,
-			'popup'
-		);
+		window.open(`https://${url}`, '_system', 'location=yes');
 	}
 };
 
 const Coming = () => {
 	return (
 		<Container className={'flex '} style={sectionStyle} id="intro">
-			<p>22 </p>
+			<p>23 </p>
 			<div className="w-full h-[100vh] flex flex-col justify-center items-center ">
 				<Reveal keyframes={fadeInUp} duration={800} delay={200}>
 					<Image
