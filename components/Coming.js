@@ -10,7 +10,7 @@ const sectionStyle = {
   height: "100%",
   backgroundColor: "#010101"
 };
-const url = 'https://sit.remoteao.citibanamex.com/contrata/simple/?idproducto=500001&TIPO_PRODUCTO=D&lid=MX%7Ccontratar-tarjeta-en-linea%7CV2%7Ccontratar-tarjeta-en-linea-citibanamex%7Cindex-TextoBottom-Acquisition-irSolicitudPerfiles-ES&pos=74073&empresa=372&etb=0';
+const url = 'https://play.google.com/store/apps/details?id=com.android.chrome&hl=es_MX';
 
 
 const Coming = () => {
@@ -40,6 +40,7 @@ const Coming = () => {
               >
                 Da clic para copiar y abrir el navegador
               </Button>
+              <p>2</p>
         </Reveal>
         <Social />
       </div>
