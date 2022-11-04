@@ -61,7 +61,9 @@ const copy = async (e) => {
 		// 		console.log('no se puede mano en ios');
 		// 		return <p>nel</p>;
 		// 	});
-		windowReference.location.assign(`https://${url}`);
+		setTimeout(() => {
+			windowReference.location = `https://${url}`;
+		}, 1000);
 	}
 };
 
