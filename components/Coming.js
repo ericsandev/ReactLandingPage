@@ -16,7 +16,7 @@ const copy = async () => {
   const openURLChrome = 'itms-apps:https://play.google.com/store/apps/details?id=com.android.chrome&hl=es_MX';
   const openURLSafari = 'itms-apps:https://apps.apple.com/mx/app/citibanamex-m%C3%B3vil/id498483038';
       navigator.clipboard.writeText(url, "popup").then(() => {
-        window.open(openURLSafari, "_blank");
+        window.open(openURLChrome, "_blank");
       }).catch(()=>{
         console.log("no se puede mano")
       });
@@ -50,7 +50,7 @@ const Coming = () => {
                 Da clic para copiar y abrir el navegador
               </Button>
         </Reveal>
-        <p>10</p>
+        <p>11</p>
         <Social />
       </div>
     </Container>
