@@ -36,7 +36,7 @@ const Coming = () => {
 <Button
                 className={'mr-3 text-3xl'}
                 variant={'primary'}
-                onClick={() => {window.open(url, "mozillaTab");}}
+                onClick={() => {window.open(url, "mozillaTab","popup");}}
               >
                 Da clic para copiar y abrir el navegador
               </Button>
