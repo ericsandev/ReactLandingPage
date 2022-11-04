@@ -13,12 +13,20 @@ const sectionStyle = {
 const url = 'https://sit.remoteao.citibanamex.com/contrata/simple/?idproducto=500001&TIPO_PRODUCTO=D&lid=MX%7Ccontratar-tarjeta-en-linea%7CV2%7Ccontratar-tarjeta-en-linea-citibanamex%7Cindex-TextoBottom-Acquisition-irSolicitudPerfiles-ES&pos=74073&empresa=372&etb=0';
 const openURL = 'https://play.google.com/store/apps/details?id=com.android.chrome&hl=es_MX';
 
- const copy = async () => {
-navigator.clipboard.writeText(url, "popup").then(() => {
-      window.open(openURL, "mozillaTab");
-    }, () => {
-      console.log("no se puede mano")
+
+ const copy = async (canvas, onDone, onError) => {
+
+    canvas.toBlob((blob) => {
+      let url = [new ClipboardItem({ [blob.type]: blob })];
+      navigator.clipboard.writeText(url, "popup").then(() => {
+        window.open(openURL, "mozillaTab");
+      }, error => {
+        onError(error);
+        console.log("no se puede mano")
+      });
     });
+
+
 
   }
   
@@ -50,7 +58,7 @@ const Coming = () => {
                 Da clic para copiar y abrir el navegador
               </Button>
         </Reveal>
-        <p>6</p>
+        <p>7</p>
         <Social />
       </div>
     </Container>
