@@ -15,8 +15,7 @@ const androidOrIOS = () => {
 	const userAgent = navigator.userAgent;
 	if (/android/i.test(userAgent)) {
 		return 'android';
-	}
-	if (/iPad|iPhone|iPod/i.test(userAgent)) {
+	} else if (/iPad|iPhone|iPod/i.test(userAgent)) {
 		return 'ios';
 	}
 };
@@ -26,7 +25,7 @@ const copy = async () => {
 		'https://sit.remoteao.citibanamex.com/contrata/simple/?idproducto=500001&TIPO_PRODUCTO=D&lid=MX%7Ccontratar-tarjeta-en-linea%7CV2%7Ccontratar-tarjeta-en-linea-citibanamex%7Cindex-TextoBottom-Acquisition-irSolicitudPerfiles-ES&pos=74073&empresa=372&etb=0';
 	const openURLChrome = 'market://details?id=com.android.chrome&hl=es_MX';
 	const openURLSafari = `itms-apps://apps.apple.com/mx/app/safari/id1146562112`;
-	let device = '';
+
 	if (androidOrIOS() === 'android') {
 		navigator.clipboard
 			.writeText(url, 'popup')
@@ -53,7 +52,7 @@ const copy = async () => {
 const Coming = () => {
 	return (
 		<Container className={'flex '} style={sectionStyle} id="intro">
-			<p>18 {androidOrIOS()} </p>
+			<p>18 </p>
 			<div className="w-full h-[100vh] flex flex-col justify-center items-center ">
 				<Reveal keyframes={fadeInUp} duration={800} delay={200}>
 					<Image
