@@ -31,7 +31,7 @@ const copy = async () => {
 		navigator.clipboard
 			.writeText(url, 'popup')
 			.then(() => {
-				window.open(openURLChrome, '_blank');
+				window.open(openURLChrome, 'popup');
 				console.log('se puede mano en android');
 			})
 			.catch(() => {
@@ -41,7 +41,7 @@ const copy = async () => {
 		navigator.clipboard
 			.writeText(url, 'popup')
 			.then(() => {
-				window.open(openURLSafari, '_blank');
+				window.open(openURLSafari, 'popup');
 				console.log('se puede mano en android');
 			})
 			.catch(() => {
