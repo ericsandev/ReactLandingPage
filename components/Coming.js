@@ -42,7 +42,10 @@ const copy = async (e) => {
 		// 	.catch(() => {
 		// 		console.log('no se puede mano en android');
 		// 	});
-		window.open(`googlechrome://${url}`, '_system', 'popup');
+		window.open(
+			`intent:${url}#Intent;scheme=https;package=com.android.chrome;end`,
+			'popup'
+		);
 		console.log('diste click');
 	} else if (androidOrIOS() === 'ios') {
 		navigator.clipboard
@@ -63,7 +66,7 @@ const copy = async (e) => {
 const Coming = () => {
 	return (
 		<Container className={'flex '} style={sectionStyle} id="intro">
-			<p>19 </p>
+			<p>20 </p>
 			<div className="w-full h-[100vh] flex flex-col justify-center items-center ">
 				<Reveal keyframes={fadeInUp} duration={800} delay={200}>
 					<Image
