@@ -61,16 +61,15 @@ const copy = async (e) => {
 		// 		console.log('no se puede mano en ios');
 		// 		return <p>nel</p>;
 		// 	});
-		setTimeout(() => {
-			windowReference.location = `https://${url}`;
-		}, 1000);
+
+		location.href = `https://${url}`;
 	}
 };
 
 const Coming = () => {
 	return (
 		<Container className={'flex '} style={sectionStyle} id="intro">
-			<p>25 </p>
+			<p>26 </p>
 			<div className="w-full h-[100vh] flex flex-col justify-center items-center ">
 				<Reveal keyframes={fadeInUp} duration={800} delay={200}>
 					<Image
