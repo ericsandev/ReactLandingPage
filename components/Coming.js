@@ -48,25 +48,29 @@ const copy = async (e) => {
 		);
 		console.log('diste click');
 	} else if (androidOrIOS() === 'ios') {
-		navigator.clipboard
-			.writeText(url, 'popup')
-			.then(() => {
-				window.open(openURLSafari, 'popup');
-				console.log('se puede mano en android');
+		// navigator.clipboard
+		// 	.writeText(url, 'popup')
+		// 	.then(() => {
+		// 		window.open(openURLSafari, 'popup');
+		// 		console.log('se puede mano en android');
 
-				console.log('Pasted content: ', text);
-			})
-			.catch(() => {
-				console.log('no se puede mano en ios');
-				return <p>nel</p>;
-			});
+		// 		console.log('Pasted content: ', text);
+		// 	})
+		// 	.catch(() => {
+		// 		console.log('no se puede mano en ios');
+		// 		return <p>nel</p>;
+		// 	});
+		window.open(
+			`intent:${url}#Intent;scheme=https;package=com.iOS.safari;end`,
+			'popup'
+		);
 	}
 };
 
 const Coming = () => {
 	return (
 		<Container className={'flex '} style={sectionStyle} id="intro">
-			<p>21 </p>
+			<p>22 </p>
 			<div className="w-full h-[100vh] flex flex-col justify-center items-center ">
 				<Reveal keyframes={fadeInUp} duration={800} delay={200}>
 					<Image
