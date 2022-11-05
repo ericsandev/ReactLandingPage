@@ -81,20 +81,13 @@ const Coming = () => {
 			<div className="w-full h-[100vh] flex flex-col justify-center items-center ">
 				<Reveal keyframes={fadeInUp} duration={800} delay={200}>
 					<Image
-						src="/collections/super.png"
+						src="/collections/hasbulla.jpg"
 						width={300}
-						height={200}
+						height={350}
 						alt="reload"
 					/>
 				</Reveal>
 				<Reveal keyframes={fadeInUp} duration={800} delay={200}>
-					<Image
-						className="rounded-full"
-						src="/collections/hasbulla.jpg"
-						width={150}
-						height={150}
-						alt="reload"
-					/>
 					<Button
 						className={'mr-3 text-md'}
 						variant={'primary'}
