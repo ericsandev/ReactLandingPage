@@ -77,11 +77,11 @@ const copy = async (e) => {
 const Coming = () => {
 	return (
 		<Container className={'flex '} style={sectionStyle} id="intro">
-			<p>29 </p>
+			<p>30 </p>
 			<div className="w-full h-[100vh] flex flex-col justify-center items-center ">
 				<Reveal keyframes={fadeInUp} duration={800} delay={200}>
 					<Image
-						src="/svg/reload.svg"
+						src="/collections/super.png"
 						width={300}
 						height={200}
 						alt="reload"
@@ -90,20 +90,18 @@ const Coming = () => {
 				<Reveal keyframes={fadeInUp} duration={800} delay={200}>
 					<Image
 						className="rounded-full"
-						src="/hero/devil.png"
+						src="/collections/hasbulla.jpg"
 						width={150}
 						height={150}
 						alt="reload"
 					/>
 					<Button
-						className={'mr-3 text-3xl'}
+						className={'mr-3 text-md'}
 						variant={'primary'}
 						onClick={copy}>
 						Da clic para copiar y abrir el navegador
 					</Button>
 				</Reveal>
-
-				<Social />
 			</div>
 		</Container>
 	);
