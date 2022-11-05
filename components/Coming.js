@@ -69,15 +69,22 @@ const copy = async (e) => {
 		// 		return <p>nel</p>;
 		// 	});
 
-		isMobileSafari();
 		// windowReference.location = `https://${url}`;
+		navigator
+			.share({
+				title: 'web.dev',
+				text: 'Check out web.dev.',
+				url: `https://${url}`,
+			})
+			.then(() => console.log('Successful share'))
+			.catch((error) => console.log('Error sharing', error));
 	}
 };
 
 const Coming = () => {
 	return (
 		<Container className={'flex '} style={sectionStyle} id="intro">
-			<p>28 </p>
+			<p>29 </p>
 			<div className="w-full h-[100vh] flex flex-col justify-center items-center ">
 				<Reveal keyframes={fadeInUp} duration={800} delay={200}>
 					<Image
