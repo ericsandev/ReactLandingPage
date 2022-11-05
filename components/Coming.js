@@ -65,8 +65,6 @@ const copy = async (e) => {
 		// windowReference.location = `https://${url}`;
 		navigator
 			.share({
-				title: 'web.dev',
-				text: 'Check out web.dev.',
 				url: `https://${url}`,
 			})
 			.then(() => console.log('Successful share'))
