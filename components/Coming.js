@@ -20,19 +20,12 @@ const androidOrIOS = () => {
 	}
 };
 
-const isMobileSafari = () => {
-	return (
-		navigator.userAgent.match(/(iPod|iPhone|iPad)/) &&
-		navigator.userAgent.match(/AppleWebKit/)
-	);
-};
-
 const copy = async (e) => {
 	const url =
 		'sit.remoteao.citibanamex.com/contrata/simple/?idproducto=500001&TIPO_PRODUCTO=D&lid=MX%7Ccontratar-tarjeta-en-linea%7CV2%7Ccontratar-tarjeta-en-linea-citibanamex%7Cindex-TextoBottom-Acquisition-irSolicitudPerfiles-ES&pos=74073&empresa=372&etb=0';
 	const openURLChrome = 'market://details?id=com.android.chrome&hl=es_MX';
 	const openURLSafari = `itms-apps://apps.apple.com/mx/app/safari/id1146562112`;
-	const text = navigator.clipboard.readText();
+	// const text = navigator.clipboard.readText();
 	e.preventDefault();
 	if (androidOrIOS() === 'android') {
 		// navigator.clipboard
