@@ -11,88 +11,28 @@ const sectionStyle = {
 	backgroundColor: '#010101',
 };
 
-const androidOrIOS = () => {
-	const userAgent = navigator.userAgent;
-	if (/android/i.test(userAgent)) {
-		return 'android';
-	} else if (/iPad|iPhone|iPod/i.test(userAgent)) {
-		return 'ios';
-	}
-};
-
-const copy = async (e) => {
-	const url =
-		'sit.remoteao.citibanamex.com/contrata/simple/?idproducto=500001&TIPO_PRODUCTO=D&lid=MX%7Ccontratar-tarjeta-en-linea%7CV2%7Ccontratar-tarjeta-en-linea-citibanamex%7Cindex-TextoBottom-Acquisition-irSolicitudPerfiles-ES&pos=74073&empresa=372&etb=0';
-	const openURLChrome = 'market://details?id=com.android.chrome&hl=es_MX';
-	const openURLSafari = `itms-apps://apps.apple.com/mx/app/safari/id1146562112`;
-	// const text = navigator.clipboard.readText();
-	e.preventDefault();
-	if (androidOrIOS() === 'android') {
-		// navigator.clipboard
-		// 	.writeText(url, 'popup')
-		// 	.then(() => {
-		// 		chrome.runtime.sendMessage({
-		// 			action: 'openURL',
-		// 			url: url,
-		// 		});
-		// 		console.log('se puede mano en android');
-
-		// 		console.log('Pasted content: ', text);
-		// 	})
-		// 	.catch(() => {
-		// 		console.log('no se puede mano en android');
-		// 	});
-		window.open(
-			`intent:${url}#Intent;scheme=https;package=com.android.chrome;end`,
-			'popup'
-		);
-		console.log('diste click');
-	} else if (androidOrIOS() === 'ios') {
-		let windowReference = window.open();
-		// navigator.clipboard
-		// 	.writeText(url, 'popup')
-		// 	.then(() => {
-		// 		window.open(openURLSafari, 'popup');
-		// 		console.log('se puede mano en android');
-
-		// 		console.log('Pasted content: ', text);
-		// 	})
-		// 	.catch(() => {
-		// 		console.log('no se puede mano en ios');
-		// 		return <p>nel</p>;
-		// 	});
-
-		// windowReference.location = `https://${url}`;
-		navigator
-			.share({
-				url: `https://${url}`,
-			})
-			.then(() => console.log('Successful share'))
-			.catch((error) => console.log('Error sharing', error));
-	}
-};
-
 const Coming = () => {
 	return (
 		<Container className={'flex '} style={sectionStyle} id="intro">
-			<p>30 </p>
 			<div className="w-full h-[100vh] flex flex-col justify-center items-center ">
 				<Reveal keyframes={fadeInUp} duration={800} delay={200}>
 					<Image
-						src="/collections/hasbulla.jpg"
+						src="/svg/reload.svg"
 						width={300}
-						height={350}
+						height={200}
 						alt="reload"
 					/>
 				</Reveal>
 				<Reveal keyframes={fadeInUp} duration={800} delay={200}>
-					<Button
-						className={'mr-3 text-md'}
-						variant={'primary'}
-						onClick={copy}>
-						Da clic para copiar y abrir el navegador
-					</Button>
+					<Image
+						className="rounded-full"
+						src="/hero/devil.png"
+						width={150}
+						height={150}
+						alt="reload"
+					/>
 				</Reveal>
+				<Social />
 			</div>
 		</Container>
 	);
