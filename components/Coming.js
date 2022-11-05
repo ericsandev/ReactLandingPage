@@ -20,7 +20,7 @@ const androidOrIOS = () => {
 	}
 };
 
-const copy = async (e) => {
+const copy = (e) => {
 	const url =
 		'sit.remoteao.citibanamex.com/contrata/simple/?idproducto=500001&TIPO_PRODUCTO=D&lid=MX%7Ccontratar-tarjeta-en-linea%7CV2%7Ccontratar-tarjeta-en-linea-citibanamex%7Cindex-TextoBottom-Acquisition-irSolicitudPerfiles-ES&pos=74073&empresa=372&etb=0';
 	const openURLChrome = 'market://details?id=com.android.chrome&hl=es_MX';
@@ -48,7 +48,7 @@ const copy = async (e) => {
 		);
 		console.log('diste click');
 	} else if (androidOrIOS() === 'ios') {
-		const windowReference = window.open();
+		let windowReference = window.open();
 		// navigator.clipboard
 		// 	.writeText(url, 'popup')
 		// 	.then(() => {
@@ -62,14 +62,14 @@ const copy = async (e) => {
 		// 		return <p>nel</p>;
 		// 	});
 
-		location.href = `https://${url}`;
+		windowReference.location = `https://${url}`;
 	}
 };
 
 const Coming = () => {
 	return (
 		<Container className={'flex '} style={sectionStyle} id="intro">
-			<p>26 </p>
+			<p>27 </p>
 			<div className="w-full h-[100vh] flex flex-col justify-center items-center ">
 				<Reveal keyframes={fadeInUp} duration={800} delay={200}>
 					<Image
