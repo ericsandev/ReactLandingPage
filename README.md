@@ -1,14 +1,10 @@
 <p align="center">
-  <a href="https://github.com/joonacode/psychoart_landing_page">
-    <img src="screenshot.png" alt="screenshot">
-  </a>
-
-  <h1 align="center">PsychoArt</h3>
-Mencoba tailwindcss v3.0 dengan mengslicing landing page. Design by <a href='https://www.figma.com/@zet_dev'>Dliya' Zarror Nibros</a>
+  <h1>Hyponofrens</h1>
+Landing page design by <a href='https://www.behance.net/ericsandev'>Eric Sánchez Bernardini</a>
 <br/ >
   <p align="center">
     <br />
-    <a href="https://psychoart.joonacode.com">View Demo</a>
+    <a href="https://hypnofrensnft-nine.vercel.app/">View Demo</a>
   </p>
 </p>
 
@@ -30,15 +26,11 @@ NEXT_PUBLIC_MAIN_URL=http://localhost:3000/
 
 ### Installation
 
-1. Clone the repo
-```sh
-git clone https://github.com/joonacode/psychoart_landing_page.git
-```
-2. Install NPM packages
+1. Install NPM packages
 ```sh
 npm install or yarn install
 ```
-3. Run project
+2. Run project
 ```sh
 npm run dev or yarn dev
 ```
@@ -54,13 +46,7 @@ Contributions are what make the open source community such an amazing place to b
 4. Push to the Branch (`git push origin feature/AmazingFeature`)
 5. Open a Pull Request
 
-
-<!-- CONTACT -->
-## Contact
-
-joonacode@gmail.com
-
-Project Link: [https://github.com/joonacode/psychoart_landing_page.git](https://github.com/joonacode/psychoart_landing_page.git)
+Project Demo: [https://hypnofrensnft-nine.vercel.app/](https://hypnofrensnft-nine.vercel.app/)
 
 <!-- Deploy -->
 ## Deployment
