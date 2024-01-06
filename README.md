@@ -4,7 +4,7 @@ Landing page design by <a href='https://www.behance.net/ericsandev'>Eric Sánche
 <br/ >
   <p align="center">
     <br />
-    <a href="https://hypnofrensnft-nine.vercel.app/">View Demo</a>
+    <a href="https://Kraneoz-nine.vercel.app/">View Demo</a>
   </p>
 </p>
 
@@ -46,7 +46,7 @@ Contributions are what make the open source community such an amazing place to b
 4. Push to the Branch (`git push origin feature/AmazingFeature`)
 5. Open a Pull Request
 
-Project Demo: [https://hypnofrensnft-nine.vercel.app/](https://hypnofrensnft-nine.vercel.app/)
+Project Demo: [https://Kraneoz-nine.vercel.app/](https://Kraneoz-nine.vercel.app/)
 
 <!-- Deploy -->
 ## Deployment

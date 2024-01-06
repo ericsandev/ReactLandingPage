@@ -34,8 +34,8 @@ const Marketing = () => {
 						duration={1000}
 						delay={800}>
 						<p className="mb-8 lg:text-2xl text-xl ">
-							It's time for all hypnofrens in HELLIST to assert
-							their POWER and join our army against The Sensors
+							It's time for all Kraneoz in HELLIST to assert their
+							POWER and join our army against The Sensors
 						</p>
 					</Reveal>
 
@@ -73,7 +73,7 @@ const Marketing = () => {
 							objectFit="contain"
 							objectPosition={'center'}
 							src="/creators/preview.gif"
-							alt="hypnofrens"
+							alt="Kraneoz"
 						/>
 					</div>
 				</JackInTheBox>

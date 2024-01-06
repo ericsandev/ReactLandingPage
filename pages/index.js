@@ -20,10 +20,10 @@ const Home = () => {
 	return (
 		<div className="h-full main_bg text-white overflow-hidden" id="top">
 			<Helmet>
-				<title>Hypnofrens | Welcome 6666 NFTS Hypnofrens</title>
+				<title>Kraneoz | Welcome 6666 NFTS Kraneoz</title>
 				<meta
 					name="description"
-					content='Hypnofrens focuses on establishing a brand IRL through partnerships with companies around the world. In addition to a partnership with an animation studio and writers for the creation of an animated series at the same time that we are preparing the next collection called "The Sensors".'
+					content='Kraneoz focuses on establishing a brand IRL through partnerships with companies around the world. In addition to a partnership with an animation studio and writers for the creation of an animated series at the same time that we are preparing the next collection called "The Sensors".'
 				/>
 			</Helmet>
 			<Navbar />
