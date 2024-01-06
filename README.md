@@ -1,60 +1,74 @@
-<p align="center">
-  <h1>Hyponofrens</h1>
-Landing page design by <a href='https://www.behance.net/ericsandev'>Eric Sánchez Bernardini</a>
-<br/ >
-  <p align="center">
-    <br />
-    <a href="https://Kraneoz-nine.vercel.app/">View Demo</a>
-  </p>
-</p>
+# KRANEOZ App
+![Palindrome React](./public/preview.jpg)
+Welcome to KRANEOZ, an application built with React and Next.js.
 
-### Built With
+## Description
 
-* [Next JS](https://nextjs.org/)
-* [Tailwindcss](https://tailwindcss.com/)
+KRANEOZ is a dynamic React Single Page App featuring a sleek UI, responsive design, and smooth navigation. Enhance user experience with this versatile and modern web application.
 
-<!-- GETTING STARTED -->
-## Getting Started
+You can view the deployed demo [here](https://kraneoz.vercel.app/)
 
-### Setup .env example
 
-Create .env file in your root project folder.
 
+## Key Features
+
+- [List of key features]
+
+## Technologies Used
+
+- React
+- Next.js
+
+## Prerequisites
+
+Make sure to have the following tools installed before running the application:
+
+- [Node.js](https://nodejs.org/)
+- [npm](https://www.npmjs.com/) (or [Yarn](https://yarnpkg.com/) if you prefer)
+
+## Installation
+
+1. Clone this repository:
+
+   ```bash
+   git clone https://github.com/ericsandev/kraneoz.git
+   ```
+
+2. Navigate to the project directory:
+
+```bash
+cd kraneoz
 ```
-NEXT_PUBLIC_MAIN_URL=http://localhost:3000/
+
+3. Install dependencies:
+```bash
+npm install
+or
+yarn install
 ```
-
-### Installation
-
-1. Install NPM packages
-```sh
-npm install or yarn install
+## Usage
+Start the application with the following command:
+```bash
+npm run dev
 ```
-2. Run project
-```sh
-npm run dev or yarn dev
+or with Yarn:
+```bash
+yarn dev
 ```
+Open your browser and visit http://localhost:3000 to view the landing page.
 
-<!-- CONTRIBUTING -->
-## Contributing
+## Contribution
+If you want to contribute to this project, follow these steps:
 
-Contributions are what make the open source community such an amazing place to be learn, inspire, and create. Any contributions you make are **greatly appreciated**.
+- Fork the repository.
+- Create a new branch for your feature or bug fix: `git checkout -b branch-name`
+- Make your changes and commit: `git commit -m "Description of changes"`
+- Push your changes to the remote repository: `git push origin branch-name`
+- Open a pull request on GitHub.
 
-1. Fork the Project
-2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the Branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
 
-Project Demo: [https://Kraneoz-nine.vercel.app/](https://Kraneoz-nine.vercel.app/)
+## License
+This project is licensed under the [License Name]. See the LICENSE file for more details.
 
-<!-- Deploy -->
-## Deployment
-
-npm run build
-npm run start
-
-<!-- ACKNOWLEDGEMENTS -->
-## Acknowledgements
-* [react-awesome-reveal](https://www.npmjs.com/package/react-awesome-reveal)
-* [@emotion/react](https://www.npmjs.com/package/@emotion/react)
+## Contact
+For any questions or comments, contact us at [ericsandev0@gmail.com].

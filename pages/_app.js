@@ -39,13 +39,11 @@ function MyApp({ Component, pageProps }) {
 				/>
 				<meta
 					property="og:image"
-					content={
-						process.env.NEXT_PUBLIC_MAIN_URL + 'preview-image.png'
-					}
+					content={process.env.NEXT_PUBLIC_MAIN_URL + 'preview.jpg'}
 				/>
 
 				<meta property="og:locale" content="id" />
-				<meta property="og:image:alt" content="preview-image" />
+				<meta property="og:image:alt" content="preview" />
 				<meta property="og:image:type" content="png" />
 				<meta property="og:image:width" content="1200" />
 				<meta property="og:image:height" content="630" />
@@ -64,9 +62,7 @@ function MyApp({ Component, pageProps }) {
 				/>
 				<meta
 					property="twitter:image"
-					content={
-						process.env.NEXT_PUBLIC_MAIN_URL + 'preview-image.png'
-					}
+					content={process.env.NEXT_PUBLIC_MAIN_URL + 'preview.jpg'}
 				/>
 				<link
 					rel="shortcut icon"
